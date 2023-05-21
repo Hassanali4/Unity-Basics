@@ -6,6 +6,10 @@ public class RigidbodyBosster : MonoBehaviour
 {
     [SerializeField]
     float _ForceAmount = 100f;
+    [SerializeField]
+    private GameObject _LosePanel;
+    [SerializeField]
+    private GameObject _InGamePanel;
 
     private Rigidbody rigidbody1;
 
@@ -19,6 +23,17 @@ public class RigidbodyBosster : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             rigidbody1.AddForce(Vector3.up * _ForceAmount);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Lose")
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            rigidbody1.isKinematic = true;
+            _LosePanel.gameObject.SetActive(true);
+            _InGamePanel.gameObject.SetActive(false);
         }
     }
 }

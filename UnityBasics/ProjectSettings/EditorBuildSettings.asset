@@ -9,4 +9,14 @@ EditorBuildSettings:
     path: Assets/UnityBasics(Emphanzia from Youtube)/Scenes/Unity Basics(Emphanzia
       from Youtube).unity
     guid: 353f6e81d17090a4e936b7b5c6d71a76
+  - enabled: 1
+    path: Assets/Scene Selector.unity
+    guid: b78852745c4eae245b9b8ba6d9dea424
+  - enabled: 1
+    path: Assets/Box & Ball MiniGame/Alison 1.com Old Unity 5 basic foundations Course/Alison.com.unity
+    guid: eecc0a6c6b74d674fa5b03cf7f825405
+  - enabled: 1
+    path: Assets/Unity3D Physics - Rigidbodies, Colliders, Triggers/Colliders & Triggers
+      & Rigidbodies(Jason Waieman) 1.unity
+    guid: dc9e458460c890948a771e6531f30398
   m_configObjects: {}
